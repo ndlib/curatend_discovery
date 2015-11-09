@@ -1,0 +1,1 @@
+require 'coverage_helper'
