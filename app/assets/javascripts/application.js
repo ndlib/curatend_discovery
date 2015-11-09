@@ -12,5 +12,16 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require tether
+//= require bootstrap-sprockets
 //= require turbolinks
-//= require_tree .
+
+// Cleanup + enable Bootstrap tooltips on jQuery's ready event as well as
+// Turbolinks's page change event.
+$(document).on("ready page:change", function() {
+  'use strict';
+
+  $("[data-toggle='tooltip']")
+  .tooltip("destroy")
+  .tooltip();
+});
