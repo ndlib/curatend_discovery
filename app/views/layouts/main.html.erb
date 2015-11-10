@@ -1,14 +1,8 @@
 <% content_for :body do %>
 
 <%= render 'brand_bar' %>
-  <div class="container">
-    <div class="row">
-      <div class="col-xs-12">
-        <%= render 'site_actions' %>
-        <%= render 'site_message' %>
-      </div>
-    </div>
-  </div>
+<%= render 'site_actions' %>
+<%= render 'site_message' %>
 
   <main role="main" class="page-main container <%= yield(:page_class) if content_for?(:page_class)%>">
     <%= content_for?(:main) ? yield(:main) : yield %>
