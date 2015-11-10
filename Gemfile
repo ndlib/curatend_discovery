@@ -26,6 +26,14 @@ group :development, :test do
 end
 
 group :development do
+  gem 'guard-bundler'
+  gem 'guard-jshintrb'
+  gem 'guard-rails'
+  gem 'guard-rubocop'
+  gem 'guard-scss-lint', github: 'ndlib/guard-scss-lint'
+  gem 'guard-spring'
+  gem 'terminal-notifier'
+  gem 'terminal-notifier-guard'
   gem 'spring'
   gem 'web-console', '~> 2.0'
 end
