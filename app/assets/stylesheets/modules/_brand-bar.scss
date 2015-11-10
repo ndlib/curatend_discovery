@@ -1,0 +1,56 @@
+// Brand Bar
+.brand-bar-wrapper {
+  background-color: $official-blue;
+  font-family: $font-family-serif;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+
+  .division {
+    text-align: right;
+  }
+
+  i {
+    letter-spacing: 0;
+    padding: 0 .2em;
+    text-transform: none;
+  }
+}
+
+.top-link {
+  display: inline-block;
+  font-size: .5rem;
+  line-height: 2;
+  padding: .1rem;
+}
+
+.top-link a,
+.top-link a:hover,
+.top-link a:visited {
+  color: $white;
+  text-decoration: none;
+}
+
+.division {
+  float: right;
+
+  i {
+    padding-right: .25em;
+    word-spacing: .3em;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .top-link {
+    font-size: .8rem;
+    line-height: 2.5;
+    padding: 0 .3em;
+  }
+
+  .brand-bar-wrapper {
+    padding-top: .3rem;
+
+    i {
+      padding: 0 .2em;
+    }
+  }
+}

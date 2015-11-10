@@ -1,8 +1,4 @@
 // Variables
-//
-// Copy settings from this file into the provided `_custom.scss` to override
-// the Bootstrap defaults without modifying key, versioned files.
-
 
 // Table of Contents
 //
@@ -26,13 +22,20 @@
 //
 // Grayscale and brand colors for use across Bootstrap.
 
+// ND Colors
+$official-blue:             #002b5b;
+$official-blue-dark:        #001f42;
+$official-gold:             #dcb439;
+$official-gold-accent:      #9c802e;
+
 $gray-dark:                 #373a3c !default;
 $gray:                      #55595c !default;
 $gray-light:                #818a91 !default;
 $gray-lighter:              #eceeef !default;
 $gray-lightest:             #f7f7f9 !default;
+$white:                     #fff;
 
-$brand-primary:             #0275d8 !default;
+$brand-primary:             $official-blue-dark;
 $brand-success:             #5cb85c !default;
 $brand-info:                #5bc0de !default;
 $brand-warning:             #f0ad4e !default;
@@ -125,9 +128,10 @@ $grid-gutter-width:          1.875rem !default; // 30px
 // Font, line-height, and color for body text, headings, and more.
 
 $font-family-sans-serif:     "Helvetica Neue", Helvetica, Arial, sans-serif !default;
-$font-family-serif:          Georgia, "Times New Roman", Times, serif !default;
+$font-family-serif:          'Adobe Garamond Pro', Georgia, Times, serif;
 $font-family-monospace:      Menlo, Monaco, Consolas, "Courier New", monospace !default;
 $font-family-base:           $font-family-sans-serif !default;
+$font-family-header:         GalaxiePolarisCondensedBook, 'Helvetica Neue', Helvetica, Arial, Verdana, sans-serif;
 
 // Pixel value used to responsively scale all typography. Applied to the `<html>` element.
 $font-size-root:             16px !default;
@@ -173,7 +177,7 @@ $blockquote-small-color:      $gray-light !default;
 $blockquote-font-size:        ($font-size-base * 1.25) !default;
 $blockquote-border-color:     $gray-lighter !default;
 
-$hr-border-color:             rgba(0,0,0,.1) !default;
+$hr-border-color:             rgba(0, 0, 0, .1) !default;
 $hr-border-width:             $border-width !default;
 
 
@@ -184,9 +188,9 @@ $hr-border-width:             $border-width !default;
 $line-height-lg:         (4 / 3) !default;
 $line-height-sm:         1.5 !default;
 
-$border-radius:          .25rem !default;
-$border-radius-lg:       .3rem !default;
-$border-radius-sm:       .2rem !default;
+$border-radius:          .1rem !default;
+$border-radius-lg:       .1rem !default;
+$border-radius-sm:       .1rem !default;
 
 $component-active-color: #fff !default;
 $component-active-bg:    $brand-primary !default;
@@ -266,14 +270,14 @@ $input-bg-disabled:              $gray-lighter !default;
 
 $input-color:                    $gray !default;
 $input-border:                   #ccc !default;
-$input-box-shadow:               inset 0 1px 1px rgba(0,0,0,.075) !default;
+$input-box-shadow:               inset 0 1px 1px rgba(0, 0, 0, .075) !default;
 
 $input-border-radius:            $border-radius !default;
 $input-border-radius-lg:         $border-radius-lg !default;
 $input-border-radius-sm:         $border-radius-sm !default;
 
 $input-border-focus:             #66afe9 !default;
-$input-box-shadow-focus:         rgba(102,175,233,.6) !default;
+$input-box-shadow-focus:         rgba(102, 175, 233, .6) !default;
 
 $input-color-placeholder:        #999 !default;
 
@@ -305,7 +309,7 @@ $form-icon-error: "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGl
 // Dropdown menu container and contents.
 
 $dropdown-bg:                    #fff !default;
-$dropdown-border:                rgba(0,0,0,.15) !default;
+$dropdown-border:                rgba(0, 0, 0, .15) !default;
 $dropdown-divider-bg:            #e5e5e5 !default;
 
 $dropdown-link-color:            $gray-dark !default;
@@ -343,15 +347,15 @@ $navbar-border-radius:              $border-radius !default;
 $navbar-padding-horizontal:         $spacer !default;
 $navbar-padding-vertical:           ($spacer / 2) !default;
 
-$navbar-dark-color:                 rgba(255,255,255,.5) !default;
-$navbar-dark-hover-color:           rgba(255,255,255,.75) !default;
-$navbar-dark-active-color:          rgba(255,255,255,1) !default;
-$navbar-dark-disabled-color:        rgba(255,255,255,.25) !default;
+$navbar-dark-color:                 rgba(255, 255, 255, .5) !default;
+$navbar-dark-hover-color:           rgba(255, 255, 255, .75) !default;
+$navbar-dark-active-color:          rgba(255, 255, 255, 1) !default;
+$navbar-dark-disabled-color:        rgba(255, 255, 255, .25) !default;
 
-$navbar-light-color:                rgba(0,0,0,.3) !default;
-$navbar-light-hover-color:          rgba(0,0,0,.6) !default;
-$navbar-light-active-color:         rgba(0,0,0,.8) !default;
-$navbar-light-disabled-color:       rgba(0,0,0,.15) !default;
+$navbar-light-color:                rgba(0, 0, 0, .3) !default;
+$navbar-light-hover-color:          rgba(0, 0, 0, .6) !default;
+$navbar-light-active-color:         rgba(0, 0, 0, .8) !default;
+$navbar-light-disabled-color:       rgba(0, 0, 0, .15) !default;
 
 
 // Navs
@@ -471,7 +475,7 @@ $tooltip-arrow-color:         $tooltip-bg !default;
 
 $popover-bg:                          #fff !default;
 $popover-max-width:                   276px !default;
-$popover-border-color:                rgba(0,0,0,.2) !default;
+$popover-border-color:                rgba(0, 0, 0, .2) !default;
 $popover-fallback-border-color:       #ccc !default;
 
 $popover-title-bg:                    darken($popover-bg, 3%) !default;
@@ -480,7 +484,7 @@ $popover-arrow-width:                 10px !default;
 $popover-arrow-color:                 $popover-bg !default;
 
 $popover-arrow-outer-width:           ($popover-arrow-width + 1) !default;
-$popover-arrow-outer-color:           fade-in($popover-border-color, 0.05) !default;
+$popover-arrow-outer-color:           fade-in($popover-border-color, .05) !default;
 $popover-arrow-outer-fallback-color:  darken($popover-fallback-border-color, 20%) !default;
 
 
@@ -506,7 +510,7 @@ $modal-title-padding:         15px !default;
 $modal-title-line-height:     $line-height !default;
 
 $modal-content-bg:                             #fff !default;
-$modal-content-border-color:                   rgba(0,0,0,.2) !default;
+$modal-content-border-color:                   rgba(0, 0, 0, .2) !default;
 
 $modal-backdrop-bg:           #000 !default;
 $modal-backdrop-opacity:      .5 !default;
@@ -598,7 +602,7 @@ $breadcrumb-divider:            "/" !default;
 
 // Carousel
 
-$carousel-text-shadow:                        0 1px 2px rgba(0,0,0,.6) !default;
+$carousel-text-shadow:                        0 1px 2px rgba(0, 0, 0, .6) !default;
 
 $carousel-control-color:                      #fff !default;
 $carousel-control-width:                      15% !default;
@@ -615,7 +619,7 @@ $carousel-caption-color:                      #fff !default;
 
 $close-font-weight:           bold !default;
 $close-color:                 #000 !default;
-$close-text-shadow:           0 1px 0 #fff !default;
+$close-text-shadow:           0 1px 0 $white !default;
 
 
 // Code
