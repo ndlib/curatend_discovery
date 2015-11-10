@@ -4,9 +4,3 @@
 scss_files: "app/**/*.scss"
 
 linters:
-  PlaceholderInExtend:
-    exclude: app/assets/stylesheets/framework_and_overrides.css.scss
-  StringQuotes:
-    enabled: false
-  Comment:
-    exclude: app/assets/stylesheets/application.css.scss
