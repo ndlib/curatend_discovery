@@ -1,0 +1,23 @@
+// Footer formatting
+.site-footer {
+  color: $gray-light;
+  padding-top: 2rem;
+  text-align: left;
+
+  p {
+    margin-bottom: .3em;
+  }
+
+  .footer-right {
+    text-align: right;
+
+    .hesburgh-logo {
+      width: 180px;
+    }
+  }
+}
+
+.help-report-a-problem {
+  margin: .5em .5em .5em 0;
+}
+
