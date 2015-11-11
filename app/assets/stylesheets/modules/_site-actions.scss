@@ -16,3 +16,34 @@
     text-transform: uppercase;
   }
 }
+
+.navbar-toggler {
+  float: right;
+}
+
+.actions-wrapper {
+  float: left;
+}
+
+@include media-breakpoint-down(md) {
+  .actions-wrapper {
+    clear: both;
+    float: none;
+    padding-bottom: .5rem;
+  }
+
+  .navbar {
+    .navbar-brand {
+      line-height: 1;
+    }
+
+    .nav-item {
+      display: block;
+      float: none;
+
+      + .nav-item {
+        margin-left: 0;
+      }
+    }
+  }
+}
