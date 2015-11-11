@@ -347,10 +347,10 @@ $navbar-border-radius:              $border-radius !default;
 $navbar-padding-horizontal:         ($spacer / 5);
 $navbar-padding-vertical:           ($spacer / 2) !default;
 
-$navbar-dark-color:                 rgba(255, 255, 255, .5) !default;
-$navbar-dark-hover-color:           rgba(255, 255, 255, .75) !default;
-$navbar-dark-active-color:          rgba(255, 255, 255, 1) !default;
-$navbar-dark-disabled-color:        rgba(255, 255, 255, .25) !default;
+$navbar-dark-color:                 $official-gold;
+$navbar-dark-hover-color:           $white;
+$navbar-dark-active-color:          $white;
+$navbar-dark-disabled-color:        $official-gold-accent;
 
 $navbar-light-color:                rgba(0, 0, 0, .3) !default;
 $navbar-light-hover-color:          rgba(0, 0, 0, .6) !default;
